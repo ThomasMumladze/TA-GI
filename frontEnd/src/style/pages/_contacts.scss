@@ -1,0 +1,83 @@
+.contact {
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 60px 0px;
+
+    .title {
+        padding-bottom: 40px;
+    }
+
+    &-body {
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+
+        &--col {
+            flex-direction: column;
+            display: flex;
+            padding: 0 12px;
+
+            &:first-child {
+                flex: 1 30%;
+
+                .info-item {
+                    display: flex;
+                    gap: 10px;
+                    margin-bottom: 26px;
+
+                    h3 {
+                        padding: 0;
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+                    }
+
+                    p {
+                        padding: 0;
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+
+                    blockquote {
+                        color: #1a56db;
+                        background: color-mix(in srgb, #1a56db, transparent 92%);
+                        font-size: 20px;
+                        width: 44px;
+                        height: 44px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px;
+                        transition: all 0.3s ease-in-out;
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            &:last-child {
+                flex: 1 70%;
+
+                > div {
+                    display: flex;
+                    gap: 26px;
+                    margin-bottom: 26px;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                textarea {
+                    margin-bottom: 26px;
+                }
+
+                button {
+                    align-self: center;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}
