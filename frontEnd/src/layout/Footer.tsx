@@ -10,7 +10,14 @@ const socials = [
     { icon: <FaSquareInstagram />, url: "https://www.instagram.com/" },
 ];
 
-const Footer = () => {
+interface Props {
+    t: (key: string) => any;
+    changeLanguage: (newLang: any) => void;
+}
+
+const Footer = (props: Props) => {
+    const { changeLanguage, t } = props;
+
     return (
         <footer>
             <div className="footer-body">
@@ -35,13 +42,13 @@ const Footer = () => {
                 <div className="footer-translate">
                     <ul>
                         <li>
-                            <a>georgina</a>
+                            <a onClick={() => changeLanguage("ka")}>{t("language.ka")}</a>
                         </li>
                         <li>
-                            <a>english</a>
+                            <a onClick={() => changeLanguage("en")}>{t("language.en")}</a>
                         </li>
                         <li>
-                            <a>russian</a>
+                            <a onClick={() => changeLanguage("ru")}>{t("language.ru")}</a>
                         </li>
                     </ul>
                 </div>

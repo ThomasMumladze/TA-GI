@@ -11,7 +11,13 @@ import Title from "../components/Title";
 // =============== Services =============== //
 import { handleTextCopy } from "../services/textCopy";
 
-const Contacts = () => {
+interface Props {
+    t: (key: string) => any;
+}
+
+const Contacts = (props: Props) => {
+    const { t } = props;
+
     return (
         <section className="contact">
             <Title subtitle="Contact" title="Contact Us" />
@@ -51,10 +57,10 @@ const Contacts = () => {
                 </div>
                 <div className="contact-body--col">
                     <div>
-                        <Input oneChange={() => {}} placeholder="your name" type="text" value="" />
-                        <Input oneChange={() => {}} placeholder="your email" type="text" value="" />
+                        <Input oneChange={() => {}} placeholder={t("contact.name")} type="text" value="" />
+                        <Input oneChange={() => {}} placeholder={t("contact.email")} type="text" value="" />
                     </div>
-                    <TextArea oneChange={() => {}} placeholder="Message" value="" />
+                    <TextArea oneChange={() => {}} placeholder={t("contact.message")} value="" />
                     <Button btnOnClick={() => {}} htmlClass="" isDisabled={false}>
                         send message
                     </Button>
