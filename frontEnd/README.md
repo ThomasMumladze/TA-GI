@@ -1,4 +1,4 @@
-# 🚀 Space Tourism Website
+# 🚀 TA-GI
 
 ## Tech Stack
 
