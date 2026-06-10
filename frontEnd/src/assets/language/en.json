@@ -1,0 +1,13 @@
+{
+    "language": {
+        "ka": "georgian",
+        "ru": "russian",
+        "en": "english"
+    },
+
+    "contact": {
+        "name": "name",
+        "email": "Email",
+        "message": "message"
+    }
+}
