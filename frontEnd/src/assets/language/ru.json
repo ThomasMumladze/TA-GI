@@ -12,5 +12,9 @@
         "contactUs": "связаться с нами",
         "contact": "контакт",
         "sendMessage": "отправить сообщение"
+    },
+    "services": {
+        "serviceFee": "Стоимость наших услуг",
+        "pricing": "цены"
     }
 }

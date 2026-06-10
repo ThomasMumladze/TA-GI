@@ -13,5 +13,9 @@
         "contactUs": "contact us",
         "contact": "contact",
         "sendMessage": "send message"
+    },
+    "services": {
+        "serviceFee": "Our service fee",
+        "pricing": "pricing"
     }
 }
