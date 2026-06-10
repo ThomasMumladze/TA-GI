@@ -9,7 +9,7 @@
         margin: 0;
         letter-spacing: 1.5px;
         text-transform: uppercase;
-        color: color-mix(in srgb, var(#444444), transparent 50%);
+        color: color-mix(in srgb, #444444, transparent 50%);
         position: relative;
 
         &::after {
