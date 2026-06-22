@@ -1,0 +1,79 @@
+header {
+    box-shadow: 0 0 6px 0 #222222d0;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 90;
+
+    .header-content {
+        align-items: center;
+        border-radius: 1.375rem;
+        display: flex;
+        font-family: "Jost-nav--font";
+        gap: 22px;
+        height: max-content;
+        justify-content: space-between;
+        max-width: 1246px;
+        margin: 0 auto;
+        padding: 0.5rem 0rem;
+        user-select: none;
+        width: 100%;
+
+        a {
+            display: block;
+            line-height: 1;
+            padding: 0.31rem 0rem;
+            width: max-content;
+
+            h1 {
+                background-color: #1f1f1f;
+                border-radius: 1.375rem;
+                border-bottom-right-radius: 0px;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: normal;
+                letter-spacing: 2.5px;
+                padding: 7px 10px 7px 13px;
+                text-transform: uppercase;
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+                gap: 18px;
+
+                li {
+                    a {
+                        font-weight: 500;
+                        opacity: 0.5;
+                        text-transform: capitalize;
+                        transition: 0.25s ease-in-out opacity;
+                    }
+
+                    &:hover {
+                        a {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            gap: 12px;
+
+            svg {
+                height: 19px;
+                opacity: 0.5;
+                transition: 0.25s ease-in-out opacity;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
