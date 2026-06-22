@@ -14,8 +14,13 @@
         "sendMessage": "შეტყობინების გაგზავნა"
     },
 
-    "services": {
-        "serviceFee": "ჩვენი მომსახურების საფასური",
+    "prices": {
+        "pricesFee": "ჩვენი მომსახურების საფასური",
         "pricing": "ფასები"
+    },
+
+    "services": {
+        "services": "სერვისები",
+        "whatWeOffer": "რასაც ჩვენ გთავაზობთ"
     }
 }

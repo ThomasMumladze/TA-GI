@@ -14,8 +14,14 @@
         "contact": "contact",
         "sendMessage": "send message"
     },
-    "services": {
-        "serviceFee": "Our service fee",
+
+    "prices": {
+        "pricesFee": "Our service fee",
         "pricing": "pricing"
+    },
+
+    "services": {
+        "services": "services",
+        "whatWeOffer": "what we do offer"
     }
 }

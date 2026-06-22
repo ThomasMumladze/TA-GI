@@ -13,8 +13,13 @@
         "contact": "контакт",
         "sendMessage": "отправить сообщение"
     },
-    "services": {
-        "serviceFee": "Стоимость наших услуг",
+    "prices": {
+        "pricesFee": "Стоимость наших услуг",
         "pricing": "цены"
+    },
+
+    "services": {
+        "services": "услуга",
+        "whatWeOffer": "Что мы предлагаем"
     }
 }
