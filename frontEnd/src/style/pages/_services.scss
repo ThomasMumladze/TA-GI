@@ -3,72 +3,50 @@
     margin: 0 auto;
     padding: 60px 0px;
 
-    .title {
-        padding-bottom: 40px;
+    .services-card--navigation {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+        margin-top: 22px;
+
+        button {
+            border-radius: 0px;
+            font-size: 1.2rem;
+            padding: 15px 20px;
+        }
     }
 
-    .service-wrapper {
+    .services-wrapper {
         align-items: flex-start;
         display: flex;
-        justify-content: space-between;
-        gap: 16px;
+        gap: 18px;
+        margin-top: 22px;
 
-        .service-card {
-            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            padding: 20px;
-            flex: 1 1 25%;
-
-            &--header {
-                h3 {
-                    font-weight: 400;
-                    margin: -20px -20px 20px -20px;
-                    padding: 20px 15px;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #444444;
-                    text-transform: capitalize;
-                    text-align: center;
-                    background: rgba(68, 68, 68, 0.07);
-                }
+        &--body {
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 0.5rem;
             }
 
-            &--body {
-                font-size: 26px;
-                font-weight: 600;
-
-                h4 {
-                    font-size: 24px;
-                    margin-bottom: 16px;
-                    text-align: center;
-                }
-
-                ul {
-                    padding: 15px 0;
-                    list-style: none;
-                    text-align: center;
-                    line-height: 20px;
-                    font-size: 14px;
-                    margin-bottom: 1rem;
-
-                    li {
-                        padding-bottom: 16px;
-                    }
-                }
+            p {
+                margin-bottom: 1rem;
             }
 
-            &--footer {
-                background: rgba(68, 68, 68, 0.07);
-                margin: 0 -20px -20px -20px;
-                padding: 20px 15px;
-                text-align: center;
+            ul {
+                align-items: flex-start;
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
 
-                .service-btn {
-                    border-radius: 3px;
-                    width: 60%;
+                li {
+                    list-style-type: disc;
                 }
             }
+        }
+
+        img {
+            width: 50%;
         }
     }
 }
