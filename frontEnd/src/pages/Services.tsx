@@ -62,6 +62,8 @@ const Services = (props: Props) => {
                 ))}
             </div>
 
+            <hr />
+
             <div className="services-wrapper">
                 <div className="services-wrapper--body">
                     <h3>{active.content.title}</h3>
