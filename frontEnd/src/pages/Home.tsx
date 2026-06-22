@@ -2,6 +2,9 @@ import React from "react";
 import Contacts from "./Contacts";
 import Pricing from "./Pricing";
 import Services from "./Services";
+import About from "./About";
+import Hero from "./Hero";
+import CompanyDescription from "./CompanyDescription";
 
 interface Props {
     t: (key: string) => any;
@@ -13,6 +16,9 @@ const Home = (props: Props) => {
 
     return (
         <React.Fragment>
+            <Hero />
+            <About />
+            <CompanyDescription />
             <Services t={t} />
             <Pricing t={t} />
             <Contacts t={t} />

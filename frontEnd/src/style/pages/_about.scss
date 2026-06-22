@@ -1,0 +1,29 @@
+.about {
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 60px 0px;
+
+    &-content {
+        display: flex;
+        gap: 48px;
+
+        &--left-col {
+            ul {
+                margin-top: 16px;
+
+                li {
+                    list-style: decimal;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+
+        &--right-col {
+        }
+
+        > div {
+            flex: 1 1 50%;
+            margin-top: 16px;
+        }
+    }
+}
