@@ -2,7 +2,7 @@ import Title from "../components/Title";
 
 const About = () => {
     return (
-        <section className="about">
+        <section className="about" id="about">
             <Title subtitle={"about"} title={"who we are"} />
 
             <div className="about-content">

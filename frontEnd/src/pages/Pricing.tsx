@@ -11,7 +11,7 @@ const Pricing = (props: Props) => {
     const { t } = props;
 
     return (
-        <section className="pricing">
+        <section className="pricing" id="pricing">
             <Title subtitle={t("prices.pricing")} title={t("prices.pricesFee")} />
             <div className="pricing-wrapper">
                 {tempArr.map((item: any, _) => (

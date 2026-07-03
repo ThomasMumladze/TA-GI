@@ -4,6 +4,12 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 
 const Header = () => {
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    };
     return (
         <header>
             <div className="header-content">
@@ -14,10 +20,19 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>
-                            <a href="">home</a>
+                            <button onClick={() => scrollToSection("home")}>home</button>
                         </li>
                         <li>
-                            <a href="">contact</a>
+                            <button onClick={() => scrollToSection("about")}>About</button>
+                        </li>
+                        <li>
+                            <button onClick={() => scrollToSection("services")}>Services</button>
+                        </li>
+                        <li>
+                            <button onClick={() => scrollToSection("pricing")}>pricing</button>
+                        </li>
+                        <li>
+                            <button onClick={() => scrollToSection("contact")}>Contact</button>
                         </li>
                     </ul>
                 </nav>

@@ -42,10 +42,13 @@ header {
         nav {
             ul {
                 display: flex;
-                gap: 18px;
+                gap: 32px;
 
                 li {
-                    a {
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        color: #1f1f1f;
                         font-weight: 500;
                         opacity: 0.5;
                         text-transform: capitalize;
@@ -53,7 +56,7 @@ header {
                     }
 
                     &:hover {
-                        a {
+                        button {
                             opacity: 1;
                         }
                     }

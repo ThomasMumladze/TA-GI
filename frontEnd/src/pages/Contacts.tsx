@@ -19,7 +19,7 @@ const Contacts = (props: Props) => {
     const { t } = props;
 
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <Title subtitle={t("contact.contact")} title={t("contact.contactUs")} />
             <div className="contact-body">
                 <div className="contact-body--col">

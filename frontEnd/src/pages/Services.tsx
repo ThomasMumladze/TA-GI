@@ -47,7 +47,7 @@ const Services = (props: Props) => {
     const active = tempArr[activeIndex];
 
     return (
-        <section className="services">
+        <section className="services" id="services">
             <Title subtitle={t("services.services")} title={t("services.whatWeOffer")} />
 
             <div className="services-card--navigation">
