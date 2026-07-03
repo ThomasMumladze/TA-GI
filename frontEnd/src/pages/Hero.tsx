@@ -1,5 +1,5 @@
 const Hero = () => {
-    return <article className="hero" style={{ height: "100vh" }}></article>;
+    return <article className="hero" id="home" style={{ height: "100vh" }}></article>;
 };
 
 export default Hero;

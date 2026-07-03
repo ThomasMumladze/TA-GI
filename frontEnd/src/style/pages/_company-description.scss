@@ -32,36 +32,35 @@
 
     .services__type-list {
         display: flex;
+        gap: 20px;
 
         > div {
-            padding: 0 16px;
+            box-shadow: 0px 0px 12px 0px #0000001a;
+            border-radius: 12px;
+            padding: 16px;
             width: 33.33%;
 
             .image {
-                height: 456px;
-                width: 100%;
-
-                img {
-                    height: 100%;
-                    object-fit: cover;
-                    width: 100%;
-                }
+                margin: 0 auto;
+                width: max-content;
             }
 
-            .title {
-                color: #1f1f1f;
-                font-size: 1.33rem;
-                font-weight: 400;
+            .description-title {
+                color: #000000c7;
+                font-weight: 700;
+                font-size: 20px;
                 line-height: 1.2;
                 letter-spacing: 1px;
                 margin: 1rem 0rem;
                 text-align: center;
                 text-transform: uppercase;
             }
+
             .description {
                 p {
                     color: #555555;
-                    text-align: justify;
+                    font-size: 16px;
+                    text-align: center;
                 }
             }
         }

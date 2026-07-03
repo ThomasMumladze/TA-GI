@@ -1,3 +1,8 @@
+import individual from "../assets/img/individual.png";
+import professional from "../assets/img/professinal.png";
+import quality from "../assets/img/quality.png";
+import safety from "../assets/img/safe.png";
+
 const CompanyDescription = () => {
     return (
         <section className="company-description">
@@ -9,48 +14,45 @@ const CompanyDescription = () => {
             <div className="services__type-list">
                 <div>
                     <div className="image">
-                        <img
-                            src="https://themewagon.github.io/Selecao/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
-                            alt="..."
-                        />
+                        <img src={professional} alt="..." />
                     </div>
-                    <div className="title">Residential</div>
+                    <div className="description-title">პროფესიონალიზმი</div>
+                    <div className="description">
+                        <p>თა-გის პროფესიონალთა გუნდი, მოგიგვარებთ დალაგებასთან დაკავშირებულ ყველა პრობლემას.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div className="image">
+                        <img src={safety} alt="..." />
+                    </div>
+                    <div className="description-title">უსაფრთხოება</div>
                     <div className="description">
                         <p>
-                            From Manitoba to Brooklyn, affordable, comfortable and livable houses for families of all shapes
-                            and sizes are covered by us. Cras justo odio, dapibus, egestas eget quam lorem ipsum.
+                            ჩვენი თანამშრომლები, როგორც პროფესიონალიზმით, ასევე კეთილსინდისიერებითა და სანდოობით გამოირჩევიან.
                         </p>
                     </div>
                 </div>
 
                 <div>
                     <div className="image">
-                        <img
-                            src="https://themewagon.github.io/Selecao/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
-                            alt="..."
-                        />
+                        <img src={individual} alt="..." />
                     </div>
-                    <div className="title">Commercial</div>
+                    <div className="description-title">ინდივიდუალური მიდგომა</div>
                     <div className="description">
-                        <p>
-                            We have also designing interiors for restaurants, bar or office spaces. Cras mattis consectetur
-                            purus sit amet fermentum. Cum sociis natoque penatibus et magnis dolor.
-                        </p>
+                        <p>თა-გი გთავაზობთ, თქვენს განრიგსა და გეგმებზე მორგებულ მომსახურების პაკეტს.</p>
                     </div>
                 </div>
 
                 <div>
                     <div className="image">
-                        <img
-                            src="https://themewagon.github.io/Selecao/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
-                            alt="..."
-                        />
+                        <img src={quality} alt="..." />
                     </div>
-                    <div className="title">After renovation</div>
+                    <div className="description-title">ხარისხი</div>
                     <div className="description">
                         <p>
-                            You need your guests to have an unforgettable experience, Freya Inc. is ready to deliver. Vivamus
-                            sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce. dapibus
+                            საუკეთესო ინვენტარით და პრემიუმ კლასის ხსნარებით აღჭურვილი პროფესიონალთა გუნდი, იზრუნებს თქვენი
+                            სივრცის იდეალურ სისუფთავეზე.
                         </p>
                     </div>
                 </div>
