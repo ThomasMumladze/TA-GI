@@ -15,5 +15,7 @@ namespace backend.models
         public bool IsActive { get; set; } = true;
         public bool IsSale { get; set; }
         public int Discount { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }
