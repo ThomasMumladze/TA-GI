@@ -1,4 +1,5 @@
 using backend.Data;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
@@ -40,8 +41,17 @@ using (var scope = app.Services.CreateScope())
     migration.Database.Migrate();
 }
 
+// Configure the app to use forwarded headers
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto,
+    KnownNetworks = { },
+    KnownProxies = { }
+});
+
 app.MapOpenApi();
 app.MapScalarApiReference();
 
 app.MapControllers();
 app.Run();
+
