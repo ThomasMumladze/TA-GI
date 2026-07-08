@@ -8,6 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 
+//  Configure CORS
+builder.Services.AddOpenApi(options =>
+{
+    options.AddDocumentTransformer((document, context, cancellationToken) =>
+    {
+        document.Servers.Clear();
+        document.Servers.Add(new() { Url = "https://tagi-api.up.railway.app" });
+        return Task.CompletedTask;
+    });
+});
+
 // Configure PostgreSQL connection string
 string connectionString;
 var host = Environment.GetEnvironmentVariable("PGHOST");
@@ -41,13 +52,6 @@ using (var scope = app.Services.CreateScope())
     migration.Database.Migrate();
 }
 
-// Configure the app to use forwarded headers
-app.UseForwardedHeaders(new ForwardedHeadersOptions
-{
-    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto,
-    KnownNetworks = { },
-    KnownProxies = { }
-});
 
 app.MapOpenApi();
 app.MapScalarApiReference();
