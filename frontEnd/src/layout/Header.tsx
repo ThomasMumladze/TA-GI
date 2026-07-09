@@ -10,6 +10,9 @@ const Header = () => {
             element.scrollIntoView({ behavior: "smooth", block: "center" });
         }
     };
+
+    let isAuthenticated = true; // Replace with your actual authentication logic
+
     return (
         <header>
             <div className="header-content">
@@ -51,6 +54,11 @@ const Header = () => {
                         <FaYoutube />
                     </a>
                 </div>
+                {isAuthenticated ? (
+                    <a href="/admin" className="admin-link">
+                        Admin
+                    </a>
+                ) : null}
             </div>
         </header>
     );
