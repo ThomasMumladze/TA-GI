@@ -177,9 +177,11 @@ const PackageList = () => {
                                         <button>
                                             <MdDelete />
                                         </button>
-                                        <button>
-                                            <RxUpdate />
-                                        </button>
+                                        {item.status === "Inactive" ? (
+                                            <button>
+                                                <RxUpdate />
+                                            </button>
+                                        ) : null}
                                     </div>
                                 </td>
                             </tr>
