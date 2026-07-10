@@ -1,6 +1,3 @@
-import "./style/pages/index.scss";
-import "./style/layouts/index.scss";
-
 import "./App.scss";
 
 import Home from "./pages/Home";

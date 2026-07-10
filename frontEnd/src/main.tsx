@@ -1,3 +1,7 @@
+import "./style/components/index.scss";
+import "./style/pages/index.scss";
+import "./style/layouts/index.scss";
+
 import "./index.scss";
 
 import { StrictMode } from "react";

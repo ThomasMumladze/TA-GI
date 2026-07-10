@@ -3,3 +3,7 @@
 @use "./services";
 @use "./about";
 @use "./company-description";
+
+// admin  =====> packages
+@use "./admin//package-list";
+@use "./admin//packages";

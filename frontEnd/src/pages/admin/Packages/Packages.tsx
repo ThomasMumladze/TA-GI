@@ -1,11 +1,11 @@
 import { Outlet } from "react-router";
 
-const Admin = () => {
+const Packages = () => {
     return (
-        <article className="admin">
+        <article className="packages">
             <Outlet />
         </article>
     );
 };
 
-export default Admin;
+export default Packages;
