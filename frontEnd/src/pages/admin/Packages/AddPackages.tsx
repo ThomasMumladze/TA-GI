@@ -2,10 +2,10 @@ const AddPackages = () => {
     return (
         <section className="add-packages">
             <div className="add-packages__header">
-                <h3>Add new package</h3>
+                <h5>ახალი პაკეტის დამატება</h5>
                 <div>
-                    <button>Discard</button>
-                    <button>Add Package</button>
+                    <button>გაუქმება</button>
+                    <button>პაკეტის დამატება</button>
                 </div>
             </div>
             <div className="add-packages__body"></div>

@@ -3,10 +3,12 @@ import { useState } from "react";
 import { RxCaretRight } from "react-icons/rx";
 import { TbPackages } from "react-icons/tb";
 
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 
 const SideBar = () => {
     const [packagesOpen, setPackagesOpen] = useState(false);
+    const location = useLocation().pathname;
+
     return (
         <aside className="sidebar">
             <div className="sidebar__header">
@@ -26,10 +28,17 @@ const SideBar = () => {
 
                 <ul className={`sidebar__menu__sub ${packagesOpen ? "open" : ""}`}>
                     <li>
-                        <Link to="/admin/packages">Packages</Link>
+                        <Link className={`${location === "/admin/packages" ? "active" : ""}`} to="/admin/packages">
+                            Packages
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/admin/packages/add-packages">Add Packages</Link>
+                        <Link
+                            className={`${location === "/admin/packages/add-packages" ? "active" : ""}`}
+                            to="/admin/packages/add-packages"
+                        >
+                            Add Packages
+                        </Link>
                     </li>
                 </ul>
             </div>
