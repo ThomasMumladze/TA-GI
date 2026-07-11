@@ -74,9 +74,9 @@ const products = [
 
 import { FaLariSign } from "react-icons/fa6";
 import { BsCalendar2Date } from "react-icons/bs";
-import { TbEdit } from "react-icons/tb";
 import { MdDelete } from "react-icons/md";
 import { RxUpdate } from "react-icons/rx";
+import { Link } from "react-router";
 
 const PackageList = () => {
     return (
@@ -122,7 +122,7 @@ const PackageList = () => {
                         </select>
                     </div>
 
-                    <button>+ პაკეტის დამატება</button>
+                    <Link to="add-packages">+ პაკეტის დამატება</Link>
                 </div>
 
                 <hr />
@@ -187,9 +187,6 @@ const PackageList = () => {
                                         </td>
                                         <td className="action">
                                             <div>
-                                                <button>
-                                                    <TbEdit />
-                                                </button>
                                                 <button>
                                                     <MdDelete />
                                                 </button>
