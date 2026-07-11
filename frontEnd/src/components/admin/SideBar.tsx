@@ -37,7 +37,7 @@ const SideBar = () => {
                             className={`${location === "/admin/packages/add-packages" ? "active" : ""}`}
                             to="/admin/packages/add-packages"
                         >
-                            Add Packages
+                            Manage Packages
                         </Link>
                     </li>
                 </ul>
