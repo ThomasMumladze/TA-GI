@@ -41,13 +41,18 @@
             justify-content: space-between;
             padding: 24px;
 
-            input {
+            input,
+            select {
                 border: solid 1px #22303e;
                 border-radius: 0.375rem;
                 font-size: 1rem;
                 padding: 0.543rem 0.9375rem;
                 outline: none;
                 width: 256px;
+            }
+
+            select {
+                margin-left: 24px;
             }
 
             button {
@@ -66,7 +71,8 @@
                 }
             }
         }
-        .list-table {
+
+        &_table {
             display: flex;
             flex-wrap: nowrap;
             text-wrap: nowrap;
@@ -166,6 +172,13 @@
                     }
                 }
             }
+        }
+
+        &_pagination {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 24px;
         }
     }
 }

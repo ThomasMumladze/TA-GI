@@ -106,14 +106,28 @@ const PackageList = () => {
                 <hr />
 
                 <div className="package-list--body_action">
-                    <input type="text" placeholder="პაკეტის ძიება" />
+                    <div>
+                        <input type="text" placeholder="პაკეტის ძიება" />
+
+                        <select>
+                            <option>ღირებუილება</option>
+                            <option>კლებადობით</option>
+                            <option>ზრდადობით</option>
+                        </select>
+
+                        <select>
+                            <option>თარიღი</option>
+                            <option>შეკვეთის თარიღი</option>
+                            <option>განახლების თარიღი</option>
+                        </select>
+                    </div>
 
                     <button>+ პაკეტის დამატება</button>
                 </div>
 
                 <hr />
 
-                <div className="list-table">
+                <div className="package-list--body_table">
                     <div>
                         <table>
                             <thead>
@@ -192,6 +206,10 @@ const PackageList = () => {
                         </table>
                     </div>
                 </div>
+
+                <hr />
+
+                <div className="package-list--body_pagination">pagination</div>
             </div>
         </section>
     );
