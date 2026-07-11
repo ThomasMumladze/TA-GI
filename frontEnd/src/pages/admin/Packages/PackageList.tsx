@@ -89,7 +89,7 @@ const PackageList = () => {
                             <option>სტატუსი</option>
                             <option>აქტიური</option>
                             <option>არა აქტიური </option>
-                            <option>ფასდაკლება</option>
+                            <option>მომლოდინე</option>
                         </select>
 
                         <select>
