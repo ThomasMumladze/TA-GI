@@ -73,7 +73,6 @@ const products = [
 ];
 
 import { FaLariSign } from "react-icons/fa6";
-import { TbTruckDelivery } from "react-icons/tb";
 import { BsCalendar2Date } from "react-icons/bs";
 import { TbEdit } from "react-icons/tb";
 import { MdDelete } from "react-icons/md";
@@ -114,80 +113,85 @@ const PackageList = () => {
 
                 <hr />
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Category</th>
-                            <th>Price</th>
-                            <th>Total Order</th>
-                            <th>status</th>
-                            <th>publish Date</th>
-                            <th>update Date</th>
-                            <th>action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {products.map((item) => (
-                            <tr key={item.id}>
-                                <td className="product">
-                                    <div>
-                                        <img
-                                            src="https://cdn.magicdecor.in/com/2023/10/20174720/Anime-Scenery-Wallpaper-for-Walls-710x488.jpg"
-                                            alt="... failed to load"
-                                        />
-                                        {item.product}
-                                    </div>
-                                </td>
-                                <td>{item.category}</td>
-                                <td className="price">
-                                    <div>
-                                        <FaLariSign />
-                                        {item.price.toFixed(2)}
-                                    </div>
-                                </td>
-                                <td className="total-order">
-                                    <div>
-                                        <TbTruckDelivery />
-                                        {item.totalOrder}
-                                    </div>
-                                </td>
-                                <td
-                                    className={`${item.status === "Active" ? "active-product" : item.status === "Inactive" ? "inactive-product" : "pending-product"}`}
-                                >
-                                    <span className="statuses">{item.status}</span>
-                                </td>
-                                <td className="date publish">
-                                    <div>
-                                        <BsCalendar2Date />
-                                        {item.publishDate}
-                                    </div>
-                                </td>
-                                <td className="date update">
-                                    <div>
-                                        <BsCalendar2Date />
-                                        {item.updateDate}
-                                    </div>
-                                </td>
-                                <td className="action">
-                                    <div>
-                                        <button>
-                                            <TbEdit />
-                                        </button>
-                                        <button>
-                                            <MdDelete />
-                                        </button>
-                                        {item.status === "Inactive" ? (
-                                            <button>
-                                                <RxUpdate />
-                                            </button>
-                                        ) : null}
-                                    </div>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                <div className="list-table">
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>დასახელება</th>
+                                    <th>კატეგორია</th>
+                                    <th>ღირებულება</th>
+                                    <th>მისამართი</th>
+                                    <th>მომხმარებელი</th>
+                                    <th>ტელეფონი</th>
+                                    <th>ელ.ფოსტა</th>
+                                    <th>სტატუსი</th>
+                                    <th>შეკვეთის თარიღი</th>
+                                    <th>განახლების თარიღი</th>
+                                    <th>ქმედებები</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {products.map((item) => (
+                                    <tr key={item.id}>
+                                        <td className="product">
+                                            <div>
+                                                <img
+                                                    src="https://cdn.magicdecor.in/com/2023/10/20174720/Anime-Scenery-Wallpaper-for-Walls-710x488.jpg"
+                                                    alt="... failed to load"
+                                                />
+                                                {item.product}
+                                            </div>
+                                        </td>
+                                        <td>{item.category}</td>
+                                        <td className="price">
+                                            <div>
+                                                <FaLariSign />
+                                                {item.price.toFixed(2)}
+                                            </div>
+                                        </td>
+                                        <td>თბილისი , წერეთლის გამზირი</td>
+                                        <td>სახელი გვარი</td>
+                                        <td>599 95 95 95</td>
+                                        <td>user@gmail.com</td>
+                                        <td
+                                            className={`${item.status === "Active" ? "active-product" : item.status === "Inactive" ? "inactive-product" : "pending-product"}`}
+                                        >
+                                            <span className="statuses">{item.status}</span>
+                                        </td>
+                                        <td className="date publish">
+                                            <div>
+                                                <BsCalendar2Date />
+                                                {item.publishDate}
+                                            </div>
+                                        </td>
+                                        <td className="date update">
+                                            <div>
+                                                <BsCalendar2Date />
+                                                {item.updateDate}
+                                            </div>
+                                        </td>
+                                        <td className="action">
+                                            <div>
+                                                <button>
+                                                    <TbEdit />
+                                                </button>
+                                                <button>
+                                                    <MdDelete />
+                                                </button>
+                                                {item.status === "Inactive" ? (
+                                                    <button>
+                                                        <RxUpdate />
+                                                    </button>
+                                                ) : null}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </section>
     );
