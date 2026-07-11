@@ -18,7 +18,7 @@ const SideBar = () => {
             </div>
 
             <div className="sidebar__menu">
-                <button onClick={() => setPackagesOpen(!packagesOpen)} className="sidebar__menu__item">
+                <button onClick={() => setPackagesOpen(!packagesOpen)} className={`${packagesOpen ? "active-packages" : ""}`}>
                     <div>
                         <TbPackages />
                         Packages

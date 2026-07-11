@@ -24,9 +24,9 @@
     &__menu {
         button {
             border: none;
-            background: #e7e7ff;
+            background-color: transparent;
             border-radius: 8px;
-            color: #696cff;
+            color: #222;
             display: flex;
             font-size: 1.15rem;
             justify-content: space-between;
@@ -43,6 +43,11 @@
                 font-size: 1.575rem;
                 transition: all 0.175s ease-in-out;
             }
+        }
+
+        .active-packages {
+            background: #e7e7ff;
+            color: #474aff;
         }
 
         ul {
