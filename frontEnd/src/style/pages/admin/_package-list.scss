@@ -78,6 +78,10 @@
             text-wrap: nowrap;
             width: 100%;
 
+            svg {
+                color: #343a41;
+            }
+
             > div {
                 margin: 0 auto;
                 overflow-x: scroll;
