@@ -63,22 +63,22 @@ const SideBar = () => {
 
                 <ul className={`sidebar__menu__sub ${productOpen ? "open" : ""}`}>
                     <li>
-                        <Link className={`${location === "/admin/packages" ? "active" : ""}`} to="/admin/packages">
+                        <Link className={`${location === "/admin/products" ? "active" : ""}`} to="/admin/products">
                             პროდუქტები
                         </Link>
                     </li>
                     <li>
                         <Link
-                            className={`${location === "/admin/packages/add-packages" ? "active" : ""}`}
-                            to="/admin/packages/add-packages"
+                            className={`${location === "/admin/products/add-product" ? "active" : ""}`}
+                            to="/admin/products/add-product"
                         >
                             პროდუქტის დამატება
                         </Link>
                     </li>
                     <li>
                         <Link
-                            className={`${location === "/admin/packages/add-packages" ? "active" : ""}`}
-                            to="/admin/packages/add-packages"
+                            className={`${location === "/admin/products/edit-product" ? "active" : ""}`}
+                            to="/admin/products/edit-product"
                         >
                             პროდუქტის რედაქტირება
                         </Link>
