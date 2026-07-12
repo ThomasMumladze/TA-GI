@@ -4,7 +4,11 @@
 @use "./about";
 @use "./company-description";
 
+//admin
+@use "./admin/controls";
+
 // admin  =====> packages
 @use "./admin//package-list";
-@use "./admin//packages";
 @use "./admin/add-packages";
+
+// admin  =====> products
