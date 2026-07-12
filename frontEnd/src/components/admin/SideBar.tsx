@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { RxCaretRight } from "react-icons/rx";
 import { TbPackages } from "react-icons/tb";
+import { AiOutlineProduct } from "react-icons/ai";
 
 import { Link, useLocation } from "react-router";
 
@@ -55,7 +56,7 @@ const SideBar = () => {
                     className={`${productOpen ? "active-products" : ""}`}
                 >
                     <div>
-                        <TbPackages />
+                        <AiOutlineProduct />
                         პროდუქტი
                     </div>
                     <RxCaretRight style={{ transform: productOpen ? "rotate(90deg)" : "none" }} />
