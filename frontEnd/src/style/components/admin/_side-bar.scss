@@ -5,7 +5,7 @@
     padding: 10px 16px;
     height: 100%;
     top: 0px;
-    width: 280px;
+    width: 296px;
 
     &__header {
         align-items: center;
@@ -45,7 +45,8 @@
             }
         }
 
-        .active-packages {
+        .active-packages,
+        .active-products {
             background: #e7e7ff;
             color: #474aff;
         }
@@ -84,13 +85,11 @@
         &__sub {
             height: 0px;
             overflow: hidden;
-            opacity: 0;
             pointer-events: none;
             transition: all 0.175s ease-in-out;
 
             &.open {
-                height: 90px;
-                opacity: 1;
+                height: max-content;
                 pointer-events: auto;
             }
         }

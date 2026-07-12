@@ -7,6 +7,7 @@ import { Link, useLocation } from "react-router";
 
 const SideBar = () => {
     const [packagesOpen, setPackagesOpen] = useState(false);
+    const [productOpen, setProductOpen] = useState(false);
     const location = useLocation().pathname;
 
     return (
@@ -18,10 +19,15 @@ const SideBar = () => {
             </div>
 
             <div className="sidebar__menu">
-                <button onClick={() => setPackagesOpen(!packagesOpen)} className={`${packagesOpen ? "active-packages" : ""}`}>
+                <button
+                    onClick={() => {
+                        (setPackagesOpen(!packagesOpen), setProductOpen(false));
+                    }}
+                    className={`${packagesOpen ? "active-packages" : ""}`}
+                >
                     <div>
                         <TbPackages />
-                        Packages
+                        პაკეტი
                     </div>
                     <RxCaretRight style={{ transform: packagesOpen ? "rotate(90deg)" : "none" }} />
                 </button>
@@ -29,7 +35,7 @@ const SideBar = () => {
                 <ul className={`sidebar__menu__sub ${packagesOpen ? "open" : ""}`}>
                     <li>
                         <Link className={`${location === "/admin/packages" ? "active" : ""}`} to="/admin/packages">
-                            Packages
+                            პაკეტები
                         </Link>
                     </li>
                     <li>
@@ -37,7 +43,44 @@ const SideBar = () => {
                             className={`${location === "/admin/packages/add-packages" ? "active" : ""}`}
                             to="/admin/packages/add-packages"
                         >
-                            Manage Packages
+                            პაკეტების მართვა
+                        </Link>
+                    </li>
+                </ul>
+
+                <button
+                    onClick={() => {
+                        (setProductOpen(!productOpen), setPackagesOpen(false));
+                    }}
+                    className={`${productOpen ? "active-products" : ""}`}
+                >
+                    <div>
+                        <TbPackages />
+                        პროდუქტი
+                    </div>
+                    <RxCaretRight style={{ transform: productOpen ? "rotate(90deg)" : "none" }} />
+                </button>
+
+                <ul className={`sidebar__menu__sub ${productOpen ? "open" : ""}`}>
+                    <li>
+                        <Link className={`${location === "/admin/packages" ? "active" : ""}`} to="/admin/packages">
+                            პროდუქტები
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={`${location === "/admin/packages/add-packages" ? "active" : ""}`}
+                            to="/admin/packages/add-packages"
+                        >
+                            პროდუქტის დამატება
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={`${location === "/admin/packages/add-packages" ? "active" : ""}`}
+                            to="/admin/packages/add-packages"
+                        >
+                            პროდუქტის რედაქტირება
                         </Link>
                     </li>
                 </ul>
