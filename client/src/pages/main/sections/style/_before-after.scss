@@ -1,0 +1,38 @@
+.before-after {
+    margin-top: 5rem;
+
+    @media (min-width: 640px) {
+        padding: 0 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 5rem 2rem;
+    }
+
+    &__container {
+        width: 100%;
+    }
+
+    &__header {
+        max-width: 48rem;
+        margin: 0 auto 2.5rem;
+        text-align: center;
+
+        h2 {
+            margin-top: 0.25rem;
+            color: #172b22;
+            font-size: 1.875rem;
+            font-weight: 900;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            color: #718078;
+        }
+    }
+
+    &__content {
+        max-width: 56rem;
+        margin: 0 auto;
+    }
+}

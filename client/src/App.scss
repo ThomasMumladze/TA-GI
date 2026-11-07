@@ -30,4 +30,14 @@ body {
     button {
         font-family: sans;
     }
+
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
 }

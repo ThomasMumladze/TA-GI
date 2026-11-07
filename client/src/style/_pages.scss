@@ -1,0 +1,9 @@
+@use "./pages/main";
+
+// --- Main Page Section Styles
+@use "../pages/main/sections/style/about";
+@use "../pages/main/sections/style/why-us";
+@use "../pages/main/sections/style/hero";
+@use "../pages/main/sections/style/feature";
+@use "../pages/main/sections/style/process";
+@use "../pages/main/sections/style/before-after";
