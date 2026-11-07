@@ -1,11 +1,17 @@
 header {
-    margin: 0 auto;
-    max-width: 80rem;
+    background-color: #fff !important;
+    padding: 19px 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
 
     .header--body {
         align-items: center;
         display: flex;
         justify-content: space-between;
+
+        margin: 0 auto;
+        max-width: 80rem;
 
         .page-logo {
             align-items: center;
