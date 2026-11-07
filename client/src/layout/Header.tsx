@@ -19,7 +19,7 @@ const Header = () => {
                     </div>
                 </div>
                 <Navigation />
-                <Button textContent="შეუკვეთე მომსახურება" btnClassName="btn-primary" />
+                <Button textContent="დაჯავშნე ონლაინ" btnClassName="btn-primary" />
             </div>
         </header>
     );
