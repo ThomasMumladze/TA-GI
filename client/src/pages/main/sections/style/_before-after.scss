@@ -1,5 +1,6 @@
 .before-after {
     margin-top: 5rem;
+    user-select: none;
 
     @media (min-width: 640px) {
         padding: 0 1.5rem;
