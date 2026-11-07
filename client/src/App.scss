@@ -1,0 +1,33 @@
+@use "./style/index.scss";
+
+@font-face {
+    font-family: "geoSans";
+    src: url("./assets/font/GoogleSans-VariableFont_GRAD\,opsz\,wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #f7faf8;
+    font-family: "geoSans";
+
+    .App {
+        section {
+            background-color: #ffffff;
+
+            .section-body {
+                margin: 5rem auto;
+                max-width: 80rem;
+            }
+        }
+    }
+
+    h1,
+    button {
+        font-family: sans;
+    }
+}

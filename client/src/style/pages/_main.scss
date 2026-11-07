@@ -1,0 +1,280 @@
+.main-page {
+    .about-section,
+    .why-us-section {
+        background-color: #fff;
+        border-top: 1px solid #e5ede8;
+        padding: 5rem 0rem;
+
+        .about-container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            @media (min-width: 640px) {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            @media (min-width: 1024px) {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .about-grid {
+                align-items: center;
+                display: grid;
+                gap: 3rem;
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+
+                @media (min-width: 1024px) {
+                    gap: 3rem;
+                    grid-template-columns: repeat(12, minmax(0, 1fr));
+                }
+
+                .about-image-column {
+                    @media (min-width: 1024px) {
+                        grid-column: span 6 / span 6;
+                    }
+
+                    .about-image-wrapper {
+                        position: relative;
+
+                        .about-image-frame {
+                            border: 1px solid #e5ede8;
+                            border-radius: 1rem;
+                            box-shadow:
+                                0 20px 25px -5px rgb(0 0 0 / 0.1),
+                                0 8px 10px -6px rgb(0 0 0 / 0.1);
+                            overflow: hidden;
+
+                            .about-image {
+                                height: 100%;
+                                object-fit: cover;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .about-stats {
+                        background-color: #35b879;
+                        border-radius: 1rem;
+                        bottom: -1.5rem;
+                        box-shadow:
+                            0 20px 25px -5px rgb(0 0 0 / 0.1),
+                            0 8px 10px -6px rgb(0 0 0 / 0.1);
+                        display: none;
+                        flex-direction: column;
+                        max-width: 20rem;
+                        padding: 1.5rem;
+                        position: absolute;
+                        right: -1.5rem;
+                        color: #fff;
+
+                        @media (min-width: 640px) {
+                            display: flex;
+                        }
+
+                        .about-stats-number {
+                            font-size: 1.875rem;
+                            font-weight: 800;
+                            margin-bottom: 0.25rem;
+                        }
+
+                        .about-stats-description {
+                            color: rgb(255 255 255 / 0.9);
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .about-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+                    @media (min-width: 1024px) {
+                        grid-column: span 6 / span 6;
+                    }
+
+                    .about-title {
+                        color: #172b22;
+                        font-size: 1.875rem;
+                        font-weight: 800;
+                        line-height: 1.25;
+
+                        @media (min-width: 640px) {
+                            font-size: 2.25rem;
+                        }
+                    }
+
+                    .about-description {
+                        color: #718078;
+                        font-size: 1rem;
+                        line-height: 1.625;
+                    }
+
+                    .about-advantages {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.75rem;
+                        padding-top: 0.5rem;
+
+                        .about-advantage {
+                            align-items: center;
+                            display: flex;
+                            gap: 0.75rem;
+
+                            .about-check-icon {
+                                align-items: center;
+                                background-color: #eaf7f0;
+                                border-radius: 9999px;
+                                color: #35b879;
+                                display: flex;
+                                flex-shrink: 0;
+                                height: 1.5rem;
+                                justify-content: center;
+                                margin-top: 0.125rem;
+                                width: 1.5rem;
+
+                                .about-check-svg {
+                                    height: 1rem;
+                                    width: 1rem;
+                                }
+                            }
+
+                            .about-advantage-content {
+                                h4 {
+                                    color: #172b22;
+                                    font-size: 0.875rem;
+                                    font-weight: 700;
+                                }
+
+                                p {
+                                    color: #718078;
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .why-us-section {
+        background-color: #f7faf8;
+
+        .why-us-container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            @media (min-width: 640px) {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            @media (min-width: 1024px) {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .why-us-header {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                margin-bottom: 4rem;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 48rem;
+                text-align: center;
+
+                .badge {
+                    align-self: center;
+                }
+
+                .why-us-title {
+                    color: #172b22;
+                    font-size: 1.875rem;
+                    font-weight: 800;
+
+                    @media (min-width: 640px) {
+                        font-size: 2.25rem;
+                    }
+                }
+
+                .why-us-subtitle {
+                    color: #718078;
+                    font-size: 1rem;
+                }
+            }
+
+            .why-us-grid {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+
+                @media (min-width: 768px) {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                }
+
+                @media (min-width: 1024px) {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                }
+
+                .why-us-card {
+                    background-color: #fff;
+                    border: 1px solid #e5ede8;
+                    border-radius: 1rem;
+                    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    padding: 2rem;
+                    transition: all 300ms ease;
+
+                    &:hover {
+                        box-shadow:
+                            0 10px 15px -3px rgb(0 0 0 / 0.1),
+                            0 4px 6px -4px rgb(0 0 0 / 0.1);
+                        transform: translateY(-0.25rem);
+                    }
+
+                    h3 {
+                        color: #172b22;
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: #718078;
+                        font-size: 0.875rem;
+                        line-height: 1.625;
+                    }
+
+                    .why-us-icon {
+                        align-items: center;
+                        background-color: #eaf7f0;
+                        border-radius: 0.75rem;
+                        color: #35b879;
+                        display: flex;
+                        font-weight: 700;
+                        height: 3rem;
+                        justify-content: center;
+                        width: 3rem;
+
+                        .why-us-icon-svg {
+                            height: 1.5rem;
+                            width: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

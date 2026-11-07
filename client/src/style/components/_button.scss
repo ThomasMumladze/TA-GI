@@ -1,0 +1,32 @@
+.app--btn {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    cursor: pointer;
+    color: #172b22;
+    font-size: 0.925rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.625rem 1.25rem;
+    transition: all 200ms ease;
+
+    &:hover {
+        box-shadow:
+            0 4px 6px -1px rgb(0 0 0 / 0.1),
+            0 2px 4px -2px rgb(0 0 0 / 0.1);
+        transform: translateY(-0.125rem);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #35b879;
+
+    &:hover {
+        background-color: #218b5b;
+    }
+}
