@@ -1,6 +1,7 @@
 import About from "./sections/About";
 import Features from "./sections/Features";
 import Hero from "./sections/Hero";
+import Process from "./sections/Process";
 import WhyUs from "./sections/WhyUs";
 
 const Main = () => {
@@ -10,6 +11,7 @@ const Main = () => {
             <Features />
             <About />
             <WhyUs />
+            <Process />
         </div>
     );
 };
